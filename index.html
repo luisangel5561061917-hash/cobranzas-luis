@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cobranzas Luis - Gestión de Cobros en México</title>
+  <meta name="description" content="Recuperación de deudas con ética y profesionalismo. Servicios de cobranza extrajudicial, seguimiento documentado y apoyo legal en todo México.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+    header {
+      background: linear-gradient(135deg, #1a3a6e, #2c5282);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    nav {
+      background-color: #1a2b4a;
+      text-align: center;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      margin: 0 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    section {
+      margin: 3rem 0;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #1a3a6e;
+      font-size: 2rem;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      justify-content: center;
+    }
+    .service-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.8rem;
+      width: 320px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+    .service-card h3 {
+      color: #2c5282;
+      margin-bottom: 1rem;
+    }
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 3rem;
+      text-align: center;
+    }
+    .about p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+    .about img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      margin: 1rem auto;
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #333;
+      font-weight: bold;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .form-group textarea {
+      height: 120px;
+    }
+    .btn {
+      background: #e67e22;
+      color: white;
+      padding: 0.9rem 2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: bold;
+      display: block;
+      margin: 2rem auto 0;
+    }
+    .btn:hover {
+      background: #d35400;
+    }
+    .contact-info {
+      text-align: center;
+      margin: 2rem 0;
+      font-size: 1.1rem;
+      color: #444;
+    }
+    .contact-info a {
+      color: #2c5282;
+      font-weight: bold;
+    }
+    footer {
+      background: #1a2b4a;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+    footer p {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cobranzas Luis</h1>
+    <p>Recuperación de deudas con ética, profesionalismo y resultados en todo México</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="inicio">
+      <div class="about">
+        <div>
+          <h2>Recupera lo que te deben</h2>
+          <p>Soy <strong>Luis</strong>, especialista en cobranza con experiencia ayudando a empresas y particulares a recuperar sus cuentas morosas de forma rápida, legal y respetuosa.</p>
+          <p>Ofrezco un servicio personalizado, confidencial y con seguimiento detallado en cada paso del proceso.</p>
+          <button class="btn" onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">
+            Solicita tu consulta gratuita
+          </button>
+        </div>
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Servicio profesional de cobranza">
+      </div>
+    </section>
+
+    <section id="servicios">
+      <h2>Nuestros Servicios</h2>
+      <div class="services">
+        <div class="service-card">
+          <h3>Gestión de Cobranza Extrajudicial</h3>
+          <p>Contacto directo con deudores mediante llamadas, mensajes y notificaciones sin necesidad de juicio.</p>
+        </div>
+        <div class="service-card">
+          <h3>Recuperación de Cuentas Morosas</h3>
+          <p>Estrategias efectivas para recuperar deudas pendientes de empresas o particulares.</p>
+        </div>
+        <div class="service-card">
+          <h3>Llamadas y Notificaciones</h3>
+          <p>Comunicación clara y profesional con recordatorios y fechas de pago.</p>
+        </div>
+        <div class="service-card">
+          <h3>Seguimiento Documentado</h3>
+          <p>Informe detallado de cada gestión para que siempre estés informado.</p>
+        </div>
+        <div class="service-card">
+          <h3>Apoyo Legal</h3>
+          <p>Asesoría para preparar documentos y, si es necesario, derivación a procesos legales.</p>
+        </div>
+        <div class="service-card">
+          <h3>Cobranza para Empresas y Particulares</h3>
+          <p>Servicio adaptado a tus necesidades, ya sea una deuda personal o cartera vencida de tu negocio.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <h2>Sobre Mí</h2>
+      <div class="about">
+        <img src="https://images.unsplash.com/photo-1599305445672-f62cdd910bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Profesional en cobranza">
+        <div>
+          <p>Soy <strong>Luis</strong>, fundador de <strong>Cobranzas Luis</strong>, con años de experiencia en la gestión de cobros en diferentes sectores.</p>
+          <p>Trabajo con ética, transparencia y respeto, asegurando que cada proceso cumpla con la ley y proteja tu reputación.</p>
+          <p>Mi objetivo es ayudarte a recuperar tus recursos sin conflictos innecesarios.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctame</h2>
+      <p style="text-align: center; margin-bottom: 1.5rem;">Escríbeme y comencemos a recuperar lo que te deben.</p>
+
+      <form class="contact-form" action="#" method="POST" onsubmit="alert('Gracias por tu mensaje, Luis se pondrá en contacto contigo pronto.'); return false;">
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Teléfono</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" placeholder="Describe tu caso o deuda pendiente" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar Mensaje</button>
+      </form>
+
+      <div class="contact-info">
+        <p>📍 <strong>Cobertura:</strong> Todo México</p>
+        <p>📞 <strong>Teléfono:</strong> 55 1227 3067</p>
+        <p>📱 <strong>WhatsApp:</strong> <a href="https://wa.me/5512273067" target="_blank">Chatea directamente conmigo</a></p>
+        <p>✉️ <strong>Email:</strong> <a href="mailto:luisangel5561@outlook.com">luisangel5561@outlook.com</a></p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Cobranzas Luis. Todos los derechos reservados.</p>
+    <p>Servicio profesional de recuperación de deudas en México.</p>
+  </footer>
+
+</body>
+</html>
